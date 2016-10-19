@@ -2,7 +2,7 @@
 body{
 	background-color: #666;
 	color: #fff;
-	background: url(image/background.jpg) no-repeat;
+	background: url(background.jpg) no-repeat;
 	background-size: cover;
 	opacity: 1;
 }
