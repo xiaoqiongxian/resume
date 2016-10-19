@@ -1,0 +1,114 @@
+/*导航栏样式*/
+body{
+	background-color: #666;
+	color: #fff;
+	background: url(image/background.jpg) no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+
+.indexMenu ul li{
+	list-style: none;
+	font-size: 20px;
+	color: #fff;	
+}
+
+.indexMenu a{
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;	
+}
+
+.indexMenu .closed{
+	display: none;
+}
+
+.indexMenu .opend{
+	display: block;
+}
+
+.indexMenu .parent-closed:before{
+	content: "▶";
+}
+
+.indexMenu .parent-opend:before{
+	content: "▷";
+}
+
+.main-container{
+	display: flex;
+}
+
+.main-left{
+	flex:2;
+}
+
+.main-right{
+	flex:5;
+}
+
+.right-content{
+	border: 1px solid #02300d;
+	margin-left: 10px;
+	border-radius: 8px;
+	min-height: 560px;
+}
+
+.indexMenu{
+	border: 1px solid #02300d;
+	border-radius: 8px;
+	min-height: 560px;
+}
+
+.main-container{
+	margin: 10px;
+}
+
+.header{
+	min-height: 60px;
+	font-size: 22px;
+	margin-bottom: -20px;
+	text-align: center;
+}
+
+.footer{
+	margin-left: 10px;
+}
+
+.list-item{
+	border-top: 1px solid #02300d;
+	margin-left: -40px;
+}
+
+.left-menu-group{
+	margin-left: 0;
+}
+
+.child-module{
+	margin-left: 40px;
+}
+
+.menu-li-active{
+	background: linear-gradient(to bottom,#119637,#119637);
+	background-color: #119637;
+	border-radius: 5px;
+}
+
+.menu-li-active a{
+	color:#000;
+}
+
+.menu-li{
+	height: 30px;
+	margin-bottom: 2px;
+}
+
+.menu-ul{
+	margin-left: -60px;
+}
+
+.left-item{
+	margin-left: 12px
+}
+    
