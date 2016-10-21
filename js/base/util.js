@@ -11,8 +11,8 @@
 			//判断是否已经有弹框显示
 			var $panelMask = $(".panel-mask");
 			if($panelMask.length){
-				$panelMask.css("z-index":"2500");
-				$this.css("z-index":"3000");
+				$panelMask.css({"z-index":"2500"});
+				$this.css({"z-index":"3000"});
 			}else{
 				//是否需要模态
 				if(!isModel){
