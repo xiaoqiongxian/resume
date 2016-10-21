@@ -19,7 +19,6 @@ var analySelfAssessment = (function($,undefined){
 		$selfAssessmentChart.highcharts({
             chart: {
                 backgroundColor: "rgba(0,0,0,0)",
-                plotBorderWidth: null,
                 plotShadow: false,
                 type: 'pie'
             },
@@ -40,28 +39,28 @@ var analySelfAssessment = (function($,undefined){
                 }
             },
             series: [{
-	            name: 'Brands',
+	            name: 'easyui',
 	            colorByPoint: true,
 	            data: [{
 	                name: 'html',
-	                y: 56.33
+	                y: 20
 	            }, {
 	                name: 'css',
-	                y: 24.03,
+	                y: 20,
 	                sliced: true,
 	                selected: true
 	            }, {
 	                name: 'javascript',
-	                y: 10.38
+	                y: 20
 	            }, {
 	                name: 'jQuery',
-	                y: 4.77
+	                y: 20
 	            }, {
 	                name: 'bootstrap',
-	                y: 0.91
+	                y: 10
 	            }, {
 	                name: 'java',
-	                y: 0.2
+	                y: 10
 	            }]
         	}]
         });
