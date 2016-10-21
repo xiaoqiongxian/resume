@@ -18,7 +18,7 @@ var analySelfAssessment = (function($,undefined){
 	var _initChart = function(){
 		$selfAssessmentChart.highcharts({
             chart: {
-                plotBackgroundColor: "rgba(0,0,0,0)",
+                backgroundColor: "rgba(0,0,0,0)",
                 plotBorderWidth: null,
                 plotShadow: false,
                 type: 'pie'
