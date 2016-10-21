@@ -3,13 +3,57 @@
 <head>
 	<meat charset="utf-8">
 	<title>自我评价</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../jqGrid/ui.jqgrid.css">
 	<link rel="stylesheet" type="text/css" href="../index.css">
 </head>
 <body>
 	<div class="right-content">
-		<h1>自我评价</h1>
+		<div role="tabpanel">
+			<!-- nav tabs -->
+			<ul class="nav nav-tabs" role="tablist" id="selfAssessmentTab">
+				<li role="presenttation" class="active">
+					<a href="#selfAssessment" aria-controls="selfAssessment" role="tab">专业技能自评</a>
+				</li>
+				<li role="presenttation">
+					<a href="#analySelfAssessment" aria-controls="analySelfAssessment" role="tab" data-toggle>专业技能自评分析</a>
+				</li>
+			</ul>
+			<!-- tab panes -->
+			<div class="tab-content">
+				<!-- 专业技能自评 -->
+				<div role="tabpanel" class="tab-pane active" id="selfAssessment">
+					<div id="selfAssessmentTable"></div>
+					<div id="selfAssessmentPager"></div>
+				</div>
+				<!-- 专业技能自评分析 -->
+				<div role="tabpanel" class="tab-pane active" id="analySelfAssessment">
+					<div id="selfAssessmentChart"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 专业技能自评详情弹窗 -->
+	<div class="panel" id="selfAssessmentPanel">
+		<div class="panel-heading">
+			<span class="panel-title">专业技能自评详情</span>
+		</div>
+		<div class="panel-body">
+			<div class="panel-body-content">
+				专业技能自评详情专业技能自评详情专业技能自评详情专业技能自评详情专业技能自评详情专业技能自评详情专业技能自评详情
+			</div>
+		</div>
 	</div>
 </body>
 <script type="text/javascript" src="../jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../bootstrap/bootstrap-typeahead.js"></script>
+<script type="text/javascript" src="../jqGrid/jquery.jqGrid.min.js"></script>
+<script type="text/javascript" src="../jqGrid/grid.locale-cn.js"></script>
 <script type="text/javascript" src="../index.js"></script>
+<script type="text/javascript" src="../js/base/util.js"></script>
+<script type="text/javascript" src="../js/selfAssessment.js"></script>
 </html>
+
