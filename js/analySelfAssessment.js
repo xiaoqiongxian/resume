@@ -1,5 +1,5 @@
 //专业技能自评分析
-var analySelfAssessment = (function($,undefined)(){
+var analySelfAssessment = (function($,undefined){
 	//变量
 	var $selfAssessmentChart = $("#selfAssessmentChart");
 	var loadOnce = true;
