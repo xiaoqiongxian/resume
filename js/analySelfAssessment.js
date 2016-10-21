@@ -22,6 +22,11 @@ var analySelfAssessment = (function($,undefined){
                 plotShadow: false,
                 type: 'pie'
             },
+	    legend : {
+		  itemStyle : {
+		      'color' : '#fff'
+		   }
+	    },
             title: {
                 text: '专业技能构成图'
             },
