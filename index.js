@@ -42,7 +42,7 @@
 							"</li>",
 							"<li class='child-module closed' id='module3'>",
 							"<ul class='menu-ul'>",
-							"<li><a class='menu-li' href='selfAssessment.html'>专业技能自评1</a></li>",
+							"<li><a class='menu-li' href='view/selfAssessment.html'>专业技能自评1</a></li>",
 							"<li><a class='menu-li' href='#'></a>专业技能自评2</li>",
 							"<li><a class='menu-li' href='#'></a>专业技能自评3</li>",
 							"</ul>",
