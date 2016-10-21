@@ -112,4 +112,19 @@ body{
 	margin-left: 12px
 }
     
+/*tab样式*/
+.nav-tabs{
+	border-bottom: 1px solid #02300d;
+}
+
+.tabHref : active{
+	background-color: #119637;
+	color: #fff;
+}
+
+.tabHref : hover{
+	background-color: #119637;
+	color: #fff;
+}
+
 
