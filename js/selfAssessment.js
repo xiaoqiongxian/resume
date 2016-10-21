@@ -2,7 +2,7 @@
 var selfAssessment = (function($,undefined){
   //缓存变量
   var $selfAssessmentTable = $("#selfAssessmentTable");
-  var $selfAssessmentTab = $("#$selfAssessmentTab");
+  var $selfAssessmentTab = $("#selfAssessmentTab");
   var $selfAssessmentPanel = $("#selfAssessmentPanel");
   var loadOnce = true;
   
