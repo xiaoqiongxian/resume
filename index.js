@@ -15,7 +15,7 @@
 							"<ul class='left-menu-group'>",
 							"<li class='list-item index-item'>导航</li>",
 							"<li class='list-item'>",
-							"<a href='index.html' class='left-item'>基本信息</a>",
+							"<a href='index.html' class='left-item' id='basicMessage'>基本信息</a>",
 							"</li>",
 							"<li class='list-item' data-module='#module1'>",
 							"<a class='parent-module parent-closed'>教育经历</a>",
@@ -42,7 +42,7 @@
 							"</li>",
 							"<li class='child-module closed' id='module3'>",
 							"<ul class='menu-ul'>",
-							"<li><a class='menu-li' href='view/selfAssessment.html'>专业技能自评1</a></li>",
+							"<li><a class='menu-li' href='selfAssessment.html'>专业技能自评1</a></li>",
 							"<li><a class='menu-li' href='#'></a>专业技能自评2</li>",
 							"<li><a class='menu-li' href='#'></a>专业技能自评3</li>",
 							"</ul>",
@@ -99,6 +99,20 @@
 					$(this).find("a[class*=parent-module]").removeClass("parent-opend").addClass("parent-closed");
 				}
 			});
+		},
+		
+		//左侧导航栏点击显示对应页面
+		setLocalPath:function(){
+			var $indexMenu = $(".indexMenu");
+			var $indexLi = $indexMenu.find("a class*=[menu-li]");
+			var localUrl = $indexLi.attr("href");
+			$indexLi.bind("click",function(){
+				location.href("https://xiaoqiongxian.github.io/resume/view/"+localUrl);
+			});
+			
+			$("#basicMessage").bind("click",function(){
+				location.href("https://xiaoqiongxian.github.io/resume/index.html");
+			});
 		}
 	});
 
@@ -108,6 +122,7 @@ var _init = function(){
 	$(".right-content").containerInit().leftMenuHighLight();
 	//2、左侧导航栏的展开和折叠
 	$("body").indexMenuHandel();
+	$("body").setLocalPath();
 };
 
 //初始化方法调用
