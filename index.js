@@ -101,19 +101,6 @@
 			});
 		},
 		
-		//左侧导航栏点击显示对应页面
-		setLocalPath:function(){
-			var $indexMenu = $(".indexMenu");
-			var $indexLi = $indexMenu.find("a class*=[menu-li]");
-			var localUrl = $indexLi.attr("href");
-			$indexLi.bind("click",function(){
-				location.href("https://xiaoqiongxian.github.io/resume/view/"+localUrl);
-			});
-			
-			$("#basicMessage").bind("click",function(){
-				location.href("https://xiaoqiongxian.github.io/resume/index.html");
-			});
-		}
 	});
 
 //初始化方法
@@ -122,7 +109,6 @@ var _init = function(){
 	$(".right-content").containerInit().leftMenuHighLight();
 	//2、左侧导航栏的展开和折叠
 	$("body").indexMenuHandel();
-	$("body").setLocalPath();
 };
 
 //初始化方法调用
