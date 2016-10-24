@@ -132,3 +132,47 @@ body{
 	color: #fff;
 }
 
+/*弹框样式*/
+.panel{
+	display: none;
+	position: fixed;
+	z-index: 999;
+	border: 1px solid rgb(57,77,101);
+	background-color: #247cd1;
+}
+
+.panel .panel-heading{
+	border: 1px solid rgb(57,77,101);
+	background-color: #247cd1;
+}
+
+.panel-heading{
+	padding: 10px;
+	border-bottom: 1px solid transparent;
+}
+
+.panel-title{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	color: inherit;
+}
+
+.panel-heading .panel-close{
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	background-color: rgba(47,63,83,0);
+	cursor: pointer;
+	right: -1px;
+	content: "x";
+	font-size: 30px;
+	text-align: center;
+	display: inline-block;
+	top: 0;
+}
+
+.panel .panel-body{
+	max-height: 750px;
+	overflow-x: hidden;
+}
