@@ -28,7 +28,10 @@ var analySelfAssessment = (function($,undefined){
 		   }
 	    },
             title: {
-                text: '专业技能构成图'
+                text: '专业技能构成图',
+		style:{
+                   color:"#fff"
+                }
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
