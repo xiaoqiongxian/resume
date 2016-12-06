@@ -132,6 +132,10 @@ body{
 	color: #fff;
 }
 
+.tab-pane{
+	margin:20px;
+}
+
 /*弹框样式*/
 .panel{
 	display: none;
