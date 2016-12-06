@@ -47,9 +47,6 @@ body{
 .main-right{
 	flex:5;
 }
-.right-main{
-	margin-top:20px;
-}
 
 .right-content{
 	border: 1px solid #02300d;
